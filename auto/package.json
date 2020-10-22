@@ -1,0 +1,71 @@
+{
+  "name": "@loic-roux-404/auto",
+  "version": "0.0.1",
+  "repository": "https://github.com/loic-roux-404/auto",
+  "author": "Loic roux <loic-roux-404@gmail.com>",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "auto": {
+    "name": "loic-roux-404",
+    "email": "ci@loicroux.com",
+    "labels": [
+      {
+        "name": "Major",
+        "changelogTitle": "💥New features with possible breaking changes",
+        "description": "Increment the major version when merged",
+        "releaseType": "major",
+        "overwrite": true
+      },
+      {
+        "name": "Minor",
+        "changelogTitle": "🚀 Features / important bug fixes",
+        "description": "Increment the minor version when merged",
+        "releaseType": "minor",
+        "overwrite": true
+      },
+      {
+        "name": "Hotfix",
+        "changelogTitle": "🐛 Bug Fix",
+        "description": "Increment the patch version when merged",
+        "releaseType": "patch",
+        "overwrite": true
+      },
+      {
+        "name": "Skip Release",
+        "description": "Preserve the current version when merged",
+        "releaseType": "skip",
+        "overwrite": true
+      },
+      {
+        "name": "Operational",
+        "changelogTitle": "🏠  Operational",
+        "description": "Changes only affect the internal API and tools",
+        "releaseType": "none",
+        "color": "#f4b2d8",
+        "overwrite": true
+      },
+      {
+        "name": "Docs",
+        "changelogTitle": "📝 Documentation",
+        "description": "Changes only affect the documentation",
+        "releaseType": "none",
+        "overwrite": true
+      },
+      {
+        "name": "Optimization",
+        "changelogTitle": "⚡️ Boost performances",
+        "description": "Improve performance of an existing feature",
+        "releaseType": "patch",
+        "color": "#f4b2d8",
+        "overwrite": true
+      }
+    ],
+    "plugins": [
+      "npm",
+      "released",
+      "git-tag"
+    ]
+  }
+}
