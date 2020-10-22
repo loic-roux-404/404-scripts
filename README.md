@@ -11,3 +11,21 @@
 # TODO
 
 - [ ] mono repo github actions for different techs
+
+## env
+
+`NPM_TOKEN`
+`GH_TOKEN`
+
+## Auto
+
+To start a new repo
+
+```bash
+git tag v0.0.1
+git push --tags
+```
+
+## Create secrets
+
+`pip3 install -r secrets/requirements.txt`
